@@ -145,3 +145,14 @@ while run:
             m.kill()
         for b in bullets:
             b.kill()
+         
+        for i in range(5):
+            monster = Enemy('zombi-removebg-preview.png', randint(40, 660), -40, 80, 40, randint(2, 5))
+            monsters.add(monster)
+
+
+    display.update()
+    clock.tick(60)
+
+
+
